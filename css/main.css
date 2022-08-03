@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px skyblue solid;
+    border-top: none;
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    height: 3rem;
+    align-items: center;
+    border-bottom: 1px skyblue solid;
+}
+
+.fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-name {
+    color: skyblue;
+    padding-inline: 1em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-items>a {
+    padding-inline: 2em;
+    border-radius: 1em;
+    padding-block: .5em;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.nav-items>a:hover{
+    background-color: rgb(255, 159, 32);
+    cursor: pointer;
+    color: #333;
+}
+
+.images {
+    margin-inline: 4em;
+    margin-block: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.image {
+    overflow: hidden;
+    border-radius: 2em;
+    margin-block: 2em;
+    margin-inline: auto;
+}
+
+.About {
+    color: skyblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-top: 1px skyblue solid;
+}
+#intro {
+    margin: 1em;
+    font-family: Verdana;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border-radius: 6em;
+    color: #333;
+    font-size: large;
+    padding: 2em;
+}
+#coming-soon {
+    margin: 1em;
+    font-family: Verdana;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    border-radius: 4em;
+    color: #333;
+    font-size: x-large;
+}
+
+.books-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-block-end: 2em;
+}
+
+.books-items {
+    list-style: none;
+    display: flex;
+}
+
+.book>a {
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: #333;
+    border-radius: 3em;
+    background-color: rgb(255, 159, 32);
+}
+.book>a:hover {
+    background-color: rgb(255, 123, 0);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.input {
+    border-radius: 2em;
+    padding-inline: .5em;
+    padding-block: .5em;
+    background-color: skyblue;
+    font-size: larger;
+}
+.a {
+    background-color: #333;
+    color: skyblue;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 2em;
+}
+.button:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #333;
+    background-color: rgb(255, 159, 32);
+    border: none;
+    border-radius: 2em;
+    box-shadow: 0 9px #999;
+  }
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.button:hover span {
+    padding-right: 25px;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.button:active {
+    background-color: rgb(255, 123, 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transition: transform 0s;
+}
+
+#Contact {
+    border-top: 1px skyblue solid;
+    padding: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: skyblue;
+}
+
+

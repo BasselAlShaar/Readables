@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Readables</title>
+        <link href="css/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/4b5f3f3140.js" crossorigin="anonymous"></script>
+        <script src="js/main.js" defer></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+               emailjs.init("AaYYB6NXLuLJDlE0g");
+            })();
+         </script>
+    </head>
+    <body>
+
+        <div class="fixed">
+
+            <nav class="nav">
+
+                <h2 class="nav-name">Readables</h2>
+    
+                <ul class="nav-links">
+    
+                    <li class="nav-items"><a href="#About">About</a></li>
+                    <li class="nav-items"><a href="#books-div">Stories</a></li>
+                    <li class="nav-items"><a href="#Contact">Contact</a></li>
+    
+                </ul>
+    
+            </nav>
+
+        </div>
+        
+
+
+        <div id="About" class="header">
+
+            <div class="images">
+
+                <div class="image"><img src="assets/pictures/little-red-riding-hood.jpg" alt="Little Red Riding Hood"></div>
+                <div class="image"><img src="assets/pictures/Snow-White.jpg" alt="Snow White"></div>
+                <div class="image"><img src="assets/pictures/Cinderella.jpg" alt="Cinderella"></div>
+                <div class="image"><img src="assets/pictures/The-Tortois-And-The-Hare.jpg" alt="The Tortois And The Hare"></div>
+
+            </div>
+            
+            <div class="About">
+
+                <p id="intro">Stories play a vital role in the growth and development of children. The books they read and the characters they get to know can become like friends. It’s also good for children to understand that books are a useful source of information and that good reading skills are important for success in their future lives. Reading also helps children with their confidence levels, coping with feelings and language and learning.</p>
+                <div id="coming-soon">
+                    <p>New stories coming sooon. Please Contact us for a story suggestions.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="books-div" class="books-div">
+
+            <nav class="books">
+
+                <ul class="books-items">
+
+                    <li class="book a"><a href="assets/Stories/Little Red Riding Hood/little-red-riding-hood.html">Little Red Riding Hood</a></li>
+                    <li class="book d"><a href="assets/Stories/The Tortois And The Hare/the-tortois-and-the-hare.html">The Tortois And The Hare</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+
+        <div class="footer">
+
+            <div id="Contact">
+
+                <form class="info">
+
+                    <div class="labels">
+                        <div class="input a">Name</div>
+                        <div class="input a">Email</div>
+                        <div class="input a">Description</div>
+
+                    </div>
+                    <div class="text">
+
+                        <div class="name">
+                            <input class="input" id="name" type="text">
+                        </div>
+
+                        <div class="email">
+                            <input class="input" id="email_id" type="email">
+                        </div>
+
+                        <div class="description">
+                            <input class="input" id="description" type="text">
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <div class="buttons">
+                    <button id="button" class="button" style="vertical-align:middle"><span>Submit</span></button>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
