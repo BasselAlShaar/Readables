@@ -205,6 +205,16 @@ body {
 #Contact {
     border-top: 1px skyblue solid;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact>h1 {
+    color: skyblue;
+    margin: 1em;
+    border-bottom: 1px skyblue solid;
 }
 
 ::-webkit-scrollbar {
